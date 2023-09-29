@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+        input, textarea {
+        
+        font-size: 2em;
+        
+        
+        }
+        
+        </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="say_hello.css">
+
+    <script>
+        function validateForm() {
+          let x = document.forms["myForm"]["fname"].value;
+          if (x == "") {
+            alert("Name must be filled out");
+            return false;
+          }
+        }
+        </script>
+</head>
+<body>
+    <!-- <div style="background-color: rgb(15, 85, 85); height:2px; width:2px"></div> -->
+    <hr style="height: 4px;background-color: rgb(40, 125, 125);margin-top: 20px;">
+    <center>
+    <div class="img">
+        <a href="main_3.html"><img src="AR (3).png" width="100px" height="100px" ></a>
+    </div>
+    </center>
+    <hr style="height: 4px;background-color: rgb(50, 145, 145);">
+    
+    <div class="header">
+        <p style="text-align: center;font-size: 40px;padding-top: 50px;">Thanks for taking the time to reach out.</p>
+        <p style="text-align: center;font-size: 40px;margin-top:-20px;">How can I help you today?</p>
+    </div>
+    <center>
+    <b><form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+        Name: <input type="text" name="fname"></b>
+        
+    <b><form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+        Email: <input type="text" name="fname"></b>
+        <br>
+        <br>
+        <br>
+
+    <b><form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+        <!-- Message: <input type="text" name="fname"></b> -->
+        Message: <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+      </form>
+    </center>
+</body>
+</html>
